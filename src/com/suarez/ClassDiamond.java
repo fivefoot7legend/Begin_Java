@@ -1,6 +1,6 @@
 package com.suarez;
 /*
-ClassDiamond will print a diamond and a X
+ClassDiamond will print a diamond and a X using the brute force method
 Varun Gande
 12/2/2019
 Version 1
@@ -21,8 +21,5 @@ public class ClassDiamond {
         System.out.print("    /\\\n");
         System.out.print("   /  \\\n");
         System.out.print("  /    \\\n");
-
-
-	// write your code here
     }
 }

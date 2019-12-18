@@ -7,15 +7,17 @@ Version 1
  */
 public class triangleStars {
     public static void main(String[] args){
-        starts(6);
+        starts(6); //defines the number of lines (which is also the number of stars on the last line)
 
     }
-    public static void starts(int stars){
-        for (int star = 1; star <= stars; star ++) {
-            for (int i=1; i <= star; i++) {
+    public static void starts(int lines){
+        for (int line = 1; line <= lines; line ++) {
+            //for loop for the lines, where the number of lines is equal to the constant "lines" defined above
+            for (int star=1; star <= line; star++) {
                 System.out.print(" *");
             }
-            System.out.println();
+            //for loop within the line loop that prints the number of stars per row, which is equivalent to the line number it is on
+            System.out.println(); //prints a new line for the line loop to act on the next line
         }
     }
 }
