@@ -1,0 +1,26 @@
+Procedure:
+	1. Program asks user to think of a polynomial in the form a + bx + cx^2 + dx^3+…, where a, b, c, d… are non-negative integer coefficients (may include 0).
+	2. Program asks user to input the polynomial value at x = 1
+	3. Program asks user to input a number larger than P(1), the sum of the coefficients. This value will be called N.
+	4. Program asks user to input the polynomial value at N. This value will be called nValue.
+	5. Program displays the user's inputs and begins calculating:
+		a. The x^0 coefficient (a) will be equal to nValue mod N.
+		b. The x^1 coefficient (b) will be equal to ((nValue-a) / N) mod N
+		c. Create a while loop until the value equals 0, marking the end of the polynomial
+		d. Store coefficients in an array
+	6. Program displays the polynomial:
+		a. Create a for loop until array.size - 1
+			i. Display "array.get(index) * x^index" for each term of the polynomial, using a counter to subtract from the sum of the coefficients until that value becomes 0 (need a while loop outside the for loop)
+			ii. Don't want to display terms with a 0 or 1 coefficient (unless the constant is 1) so have to make if else statements for those
+
+Methods I want to use:
+	1. delay (to simulate the program "thinking")
+	2. ellipsis (three dots appearing with a delay in between)
+	3. showExample (to show examples of acceptable polynomials using Random)
+	4. showWrongExample (shows an example of a polynomial that does not work)
+	5. isLongNotString (checks if the string input is a long)
+	6. isLongNotString2 (returns the long value)
+	7. askP1 (asks function value at x = 1)
+	8. askPN (asks function value at x = N)
+	9. sumArray (calculates the sum of the array's elements)
+	10. reverseArray (switches the array around)
